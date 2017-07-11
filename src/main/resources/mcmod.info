@@ -1,0 +1,16 @@
+[
+{
+  "modid": "autoender",
+  "name": "AutoEnderChests",
+  "description": "Adds an ender chest useable by hoppers.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["CsokiCraft"],
+  "credits": "panicnot42 for inspiration",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
