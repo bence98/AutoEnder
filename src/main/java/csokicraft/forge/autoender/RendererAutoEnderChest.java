@@ -1,4 +1,4 @@
-package csokicraft.forge110.autoender;
+package csokicraft.forge.autoender;
 
 import net.minecraft.client.model.ModelChest;
 import net.minecraft.client.renderer.GlStateManager;
@@ -19,7 +19,7 @@ public class RendererAutoEnderChest extends TileEntitySpecialRenderer<TileEntity
     {
         int i = 0;
 
-        if (te.hasWorldObj())
+        if (te.hasWorld())
         {
             i = te.getBlockMetadata();
         }

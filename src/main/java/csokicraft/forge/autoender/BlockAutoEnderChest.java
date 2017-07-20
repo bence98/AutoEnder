@@ -1,4 +1,4 @@
-package csokicraft.forge110.autoender;
+package csokicraft.forge.autoender;
 
 import net.minecraft.block.BlockEnderChest;
 import net.minecraft.block.state.IBlockState;
@@ -34,7 +34,7 @@ public class BlockAutoEnderChest extends BlockEnderChest{
 	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
-			EnumHand hand, ItemStack heldItem, EnumFacing side, float hitX, float hitY, float hitZ) {
+			EnumHand hand, EnumFacing side, float hitX, float hitY, float hitZ) {
 		TileEntityAutoEnderChest te=(TileEntityAutoEnderChest) worldIn.getTileEntity(pos);
 		if(te!=null){
 			InventoryEnderChest inv=te.getEnderInv();

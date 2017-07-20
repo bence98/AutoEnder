@@ -1,4 +1,4 @@
-package csokicraft.forge110.autoender;
+package csokicraft.forge.autoender;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -15,14 +15,14 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 public class AutoEnderMod
 {
     public static final String MODID = "autoender";
-    public static final String VERSION = "1.0.3";
+    public static final String VERSION = "1.0.4";
     
     public static Block blockAutoEnderChest=new BlockAutoEnderChest().setUnlocalizedName("autoEnderChest").setRegistryName("autoEnderChest");
     public static Item itemAutoEnderChest=new ItemBlock(blockAutoEnderChest).setUnlocalizedName("autoEnderChest").setRegistryName("autoEnderChest");
     
     @Instance
     public static AutoEnderMod inst;
-    @SidedProxy(clientSide="csokicraft.forge110.autoender.ClientProxy", serverSide="csokicraft.forge110.autoender.CommonProxy")
+    @SidedProxy(clientSide="csokicraft.forge.autoender.ClientProxy", serverSide="csokicraft.forge.autoender.CommonProxy")
     public static CommonProxy proxy;
     
     @EventHandler

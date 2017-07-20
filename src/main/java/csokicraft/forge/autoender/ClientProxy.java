@@ -1,4 +1,4 @@
-package csokicraft.forge110.autoender;
+package csokicraft.forge.autoender;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;

@@ -1,4 +1,4 @@
-package csokicraft.forge110.autoender;
+package csokicraft.forge.autoender;
 
 import java.util.UUID;
 
@@ -25,7 +25,7 @@ public class TileEntityAutoEnderChest extends TileEntity implements IInventory{
 	
 	public InventoryEnderChest getEnderInv(){
 		try{
-			return worldObj.getPlayerEntityByUUID(playerID).getInventoryEnderChest();
+			return world.getPlayerEntityByUUID(playerID).getInventoryEnderChest();
 		}catch(NullPointerException e){
 			return null;
 		}
@@ -117,10 +117,10 @@ public class TileEntityAutoEnderChest extends TileEntity implements IInventory{
 	}
 
 	@Override
-	public boolean isUseableByPlayer(EntityPlayer player){
+	public boolean isUsableByPlayer(EntityPlayer player){
 		InventoryEnderChest inv=getEnderInv();
 		if(inv==null) return false;
-		return inv.isUseableByPlayer(player);
+		return inv.isUsableByPlayer(player);
 	}
 
 	@Override
@@ -168,5 +168,13 @@ public class TileEntityAutoEnderChest extends TileEntity implements IInventory{
 		InventoryEnderChest inv=getEnderInv();
 		if(inv==null) return;
 		inv.clear();
+	}
+
+	@Override
+	public boolean isEmpty(){
+		InventoryEnderChest inv=getEnderInv();
+		if(inv==null)
+			return true;
+		return inv.isEmpty();
 	}
 }
