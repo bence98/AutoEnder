@@ -1,0 +1,25 @@
+{
+  "result": {
+    "item": "autoender:autoEnderChest"
+  },
+  "pattern": [
+    "iri",
+    "rer",
+    "iri"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "i": {
+      "type": "forge:ore_dict",
+      "ore": "ingotIron"
+    },
+    "r": {
+      "type": "forge:ore_dict",
+      "ore": "dustRedstone"
+    },
+    "e": {
+      "type": "forge:ore_dict",
+      "ore": "chestEnder"
+    }
+  }
+}

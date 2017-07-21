@@ -43,7 +43,7 @@ public class TileEntityAutoEnderChest extends TileEntity implements IInventory{
 	
 	@Override
 	public boolean hasCapability(Capability<?> capability, EnumFacing facing){
-		return capability==CapabilityItemHandler.ITEM_HANDLER_CAPABILITY || super.hasCapability(capability, facing);
+		return (getEnderInv()!=null&&capability==CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) || super.hasCapability(capability, facing);
 	}
 	
 	@Override

@@ -15,7 +15,8 @@ public class RendererAutoEnderChest extends TileEntitySpecialRenderer<TileEntity
 	private static final ResourceLocation ENDER_CHEST_TEXTURE = new ResourceLocation("autoender:textures/autoEnderChest.png");
     private final ModelChest modelChest = new ModelChest();
 
-    public void renderTileEntityAt(TileEntityAutoEnderChest te, double x, double y, double z, float partialTicks, int destroyStage)
+    @Override
+    public void render(TileEntityAutoEnderChest te, double x, double y, double z, float partialTicks, int destroyStage, float alpha)
     {
         int i = 0;
 
