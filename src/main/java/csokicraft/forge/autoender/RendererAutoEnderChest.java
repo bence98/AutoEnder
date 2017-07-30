@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 /** Copy-paste of {@link TileEntityEnderChestRenderer} */
 @SideOnly(Side.CLIENT)
 public class RendererAutoEnderChest extends TileEntitySpecialRenderer<TileEntityAutoEnderChest>{
-	private static final ResourceLocation ENDER_CHEST_TEXTURE = new ResourceLocation("autoender:textures/autoEnderChest.png");
+	private static final ResourceLocation ENDER_CHEST_TEXTURE = new ResourceLocation("autoender:textures/auto_ender_chest.png");
     private final ModelChest modelChest = new ModelChest();
 
     @Override

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "autoender:itemAutoEnderChest"
+        "layer0": "autoender:item_auto_ender_chest"
     }
 }

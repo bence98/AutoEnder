@@ -20,7 +20,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class AutoEnderMod
 {
     public static final String MODID = "autoender";
-    public static final String VERSION = "1.0.5";
+    public static final String VERSION = "1.0.5.1";
     
     public static Block blockAutoEnderChest=new BlockAutoEnderChest().setUnlocalizedName("autoEnderChest").setRegistryName("autoEnderChest");
     public static Item itemAutoEnderChest=new ItemBlock(blockAutoEnderChest).setUnlocalizedName("autoEnderChest").setRegistryName("autoEnderChest");
@@ -48,16 +48,4 @@ public class AutoEnderMod
     	IForgeRegistry<Item> registry=event.getRegistry();
     	registry.register(itemAutoEnderChest);
     }
-    /*
-    @SubscribeEvent
-    public void registerRecipes(RegistryEvent.Register<IRecipe> evt){
-    	IForgeRegistry<IRecipe> registry=evt.getRegistry();
-    	
-        registry.register(new ShapedOreRecipe(blockAutoEnderChest.getRegistryName(), blockAutoEnderChest,
-        		"iri", "rer", "iri",
-        		'r', "dustRedstone",
-        		'i', "ingotIron",
-        		'e', "chestEnder"));
-    }
-    */
 }
