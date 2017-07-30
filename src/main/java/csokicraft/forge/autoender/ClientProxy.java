@@ -10,7 +10,7 @@ public class ClientProxy extends CommonProxy{
 	@Override
 	public void registerModels(){
 		ItemModelMesher imm=Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
-		ModelResourceLocation loc=new ModelResourceLocation("autoender:autoEnderChest", "inventory");
+		ModelResourceLocation loc=new ModelResourceLocation("autoender:auto_ender_chest", "inventory");
 		imm.register(AutoEnderMod.itemAutoEnderChest, 0, loc);
 		ModelBakery.registerItemVariants(AutoEnderMod.itemAutoEnderChest, loc);
 		
