@@ -21,4 +21,9 @@ build
 eclipse
 run
 
-AutoEnder.old.png
+## Ignore everything but `src` and Gradle files
+*
+!src
+!src/*
+!build.gradle
+!gradle.properties
